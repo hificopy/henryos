@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  henry-os:
+    build: .
+    container_name: henry-os
+    restart: unless-stopped
+    ports:
+      - "7100:7100"
+    volumes:
+      - ${HOME}/.openclaw:/home/node/.openclaw:ro
+      - ./data:/app/data
+      - ./docs:/app/docs:ro
+    environment:
+      - PORT=7100
+      - OPENCLAW_DIR=/home/node/.openclaw
+      - GATEWAY_URL=ws://host.docker.internal:18789
+      - GATEWAY_TOKEN=${GATEWAY_TOKEN}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - axolop-network
+
+networks:
+  axolop-network:
+    external: true
