@@ -1,10 +1,12 @@
 import path from 'path';
 import { existsSync } from 'fs';
+import { fileURLToPath } from 'url';
 
 export const OPENCLAW_DIR = process.env.OPENCLAW_DIR || path.join(process.env.HOME || '/home/juansbiz', '.openclaw');
 export const GATEWAY_URL = process.env.GATEWAY_URL || 'ws://127.0.0.1:18789';
 export const GATEWAY_TOKEN = process.env.GATEWAY_TOKEN || '';
-export const DATA_DIR = path.join(path.dirname(new URL(import.meta.url).pathname), '..', 'data');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+export const DATA_DIR = path.join(__dirname, '..', 'data');
 
 export function openclawPath(...segments: string[]): string {
   return path.join(OPENCLAW_DIR, ...segments);
