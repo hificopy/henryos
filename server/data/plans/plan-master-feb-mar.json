@@ -1,0 +1,286 @@
+{
+  "id": "plan-master-feb-mar",
+  "title": "juansbiz 1-Month Master Plan",
+  "description": "Ship InboxEQ + Axolop MVP. Sell. Pay debt. Move out. Revenue first, always.",
+  "createdBy": "henry",
+  "createdByName": "Henry",
+  "createdAt": 1739829600000,
+  "updatedAt": 1739835000000,
+  "targetDate": "2026-03-17",
+  "status": "active",
+  "phases": [
+    {
+      "id": "phase-sell",
+      "name": "SELL (Feb 17-25)",
+      "emoji": "🔥",
+      "status": "in-progress",
+      "priority": "critical"
+    },
+    {
+      "id": "phase-freedom",
+      "name": "FREEDOM (March)",
+      "emoji": "🏠",
+      "status": "draft",
+      "priority": "high"
+    },
+    {
+      "id": "phase-scale",
+      "name": "SCALE (March+)",
+      "emoji": "📈",
+      "status": "draft",
+      "priority": "normal"
+    }
+  ],
+  "subPlans": [
+    {
+      "id": "sub-inboxeq-launch",
+      "title": "InboxEQ SaaS Launch",
+      "createdBy": "henry",
+      "createdByName": "Henry",
+      "department": "ALL",
+      "parentPhaseId": "phase-sell",
+      "status": "in-progress",
+      "createdAt": 1739829600000,
+      "tasks": [
+        {
+          "id": "t1",
+          "name": "InboxEQ E2E onboarding working + visual polish",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "in-progress",
+          "priority": "critical",
+          "notes": "Signup→Login→Dashboard→Klaviyo→Scan→Stripe. Lightweight & beautiful."
+        },
+        {
+          "id": "t2",
+          "name": "Klaviyo App Store submission",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "critical",
+          "notes": "Audit OAuth flow, listing copy, screenshots, submit"
+        },
+        {
+          "id": "t3",
+          "name": "InboxEQ SELLABLE — hard deadline 5PM Feb 20",
+          "assignedTo": "henry",
+          "assignedToName": "Henry",
+          "status": "pending",
+          "priority": "critical",
+          "notes": "Onboarding E2E, Stripe live, demo ready. Life or death."
+        },
+        {
+          "id": "t4",
+          "name": "LinkedIn outbound — 20 DMs/day starts",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "critical",
+          "notes": "Create Google Sheet tracker. Target ecom brands $10K+/mo."
+        },
+        {
+          "id": "t5",
+          "name": "First 5 sales calls booked",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "high",
+          "notes": ""
+        },
+        {
+          "id": "t6",
+          "name": "$5K+ closed or in pipeline",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "critical",
+          "notes": ""
+        },
+        {
+          "id": "t7",
+          "name": "LinkedIn content — deliverability tips, ecom pain points",
+          "assignedTo": "hormozi",
+          "assignedToName": "Hormozi",
+          "status": "in-progress",
+          "priority": "high",
+          "notes": "Quill + Pen producing scripts and content for Juan's outbound"
+        },
+        {
+          "id": "t8",
+          "name": "MailMend competitive analysis",
+          "assignedTo": "warren",
+          "assignedToName": "Warren",
+          "status": "in-progress",
+          "priority": "high",
+          "notes": "Scout researching. Brave API access needed from Juan."
+        }
+      ]
+    },
+    {
+      "id": "sub-axolop-mvp",
+      "title": "Axolop Self-Hosted MVP",
+      "createdBy": "henry",
+      "createdByName": "Henry",
+      "department": "engineering",
+      "parentPhaseId": "phase-sell",
+      "status": "in-progress",
+      "createdAt": 1739829600000,
+      "tasks": [
+        {
+          "id": "t9",
+          "name": "Docker Compose one-command install",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "high",
+          "notes": "PostgreSQL + Redis + App. No Supabase for self-hosted."
+        },
+        {
+          "id": "t10",
+          "name": "Landing page + pricing (cloud greyed out 'Coming Soon')",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "high",
+          "notes": ""
+        },
+        {
+          "id": "t11",
+          "name": "V5 cleanup completion — dead code, TuesdayTable, React Query",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "in-progress",
+          "priority": "normal",
+          "notes": "Deprioritized until InboxEQ ships"
+        },
+        {
+          "id": "t12",
+          "name": "GitHub repo public + README",
+          "assignedTo": "warren",
+          "assignedToName": "Warren",
+          "status": "pending",
+          "priority": "normal",
+          "notes": "Herald drafting Product Hunt + HN listings"
+        }
+      ]
+    },
+    {
+      "id": "sub-axolop-b2b",
+      "title": "Axolop B2B (Juan's Personal Variant)",
+      "createdBy": "henry",
+      "createdByName": "Henry",
+      "department": "engineering",
+      "parentPhaseId": "phase-sell",
+      "status": "in-progress",
+      "createdAt": 1739829600000,
+      "tasks": [
+        {
+          "id": "t13",
+          "name": "Feature flag architecture (axolopcrm@gmail.com only)",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "high",
+          "notes": "Zero impact on ecom Axolop"
+        },
+        {
+          "id": "t14",
+          "name": "Resurrect Forms from V2-frozen code (replaces Typeform)",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "high",
+          "notes": ""
+        },
+        {
+          "id": "t15",
+          "name": "Calendar/Scheduling module (replaces iClosed)",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "high",
+          "notes": ""
+        },
+        {
+          "id": "t16",
+          "name": "Community builder for onedollardtc.com",
+          "assignedTo": "elon",
+          "assignedToName": "Elon",
+          "status": "pending",
+          "priority": "normal",
+          "notes": ""
+        }
+      ]
+    },
+    {
+      "id": "sub-life",
+      "title": "Life Milestones",
+      "createdBy": "henry",
+      "createdByName": "Henry",
+      "department": "CEO",
+      "parentPhaseId": "phase-freedom",
+      "status": "in-progress",
+      "createdAt": 1739829600000,
+      "tasks": [
+        {
+          "id": "t17",
+          "name": "Pay off $12K debt (Capital One + Chase)",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "critical",
+          "notes": "Start Feb 21"
+        },
+        {
+          "id": "t18",
+          "name": "Start house tours",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "high",
+          "notes": ""
+        },
+        {
+          "id": "t19",
+          "name": "Buy System76, Mac Studio, Sony FX3",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "normal",
+          "notes": ""
+        },
+        {
+          "id": "t20",
+          "name": "Yamaha motorcycle",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "normal",
+          "notes": ""
+        },
+        {
+          "id": "t21",
+          "name": "Enclomiphene — optimize T levels",
+          "assignedTo": "juan",
+          "assignedToName": "Juan",
+          "status": "pending",
+          "priority": "normal",
+          "notes": "400ng→700+ target"
+        }
+      ]
+    }
+  ],
+  "cronCategories": {},
+  "changelog": [
+    {
+      "ts": 1739829600000,
+      "by": "henry",
+      "action": "Plan created — 1-Month Master Plan Feb-Mar 2026"
+    },
+    {
+      "ts": 1739835000000,
+      "by": "henry",
+      "action": "Updated task field names to match schema (assignedTo)"
+    }
+  ]
+}

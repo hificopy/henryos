@@ -7,7 +7,7 @@
   "createdAt": 1739200000000,
   "updatedAt": 1739500000000,
   "targetDate": "2026-02-28",
-  "status": "active",
+  "status": "archived",
   "phases": [
     {
       "id": "phase-security",
@@ -155,19 +155,65 @@
     }
   ],
   "cronCategories": {
-    "henry-heartbeat": { "category": "orchestration", "label": "Pipeline Check" },
-    "sales-inbox-check": { "category": "engineering", "label": "Task Execution", "relatedPhaseId": "phase-security" },
-    "scout-product-intel": { "category": "revenue", "label": "Product Intel" },
-    "quill-content-draft": { "category": "marketing", "label": "Content Drafting", "relatedPhaseId": "phase-launch" }
+    "henry-heartbeat": {
+      "category": "orchestration",
+      "label": "Pipeline Check"
+    },
+    "sales-inbox-check": {
+      "category": "engineering",
+      "label": "Task Execution",
+      "relatedPhaseId": "phase-security"
+    },
+    "scout-product-intel": {
+      "category": "revenue",
+      "label": "Product Intel"
+    },
+    "quill-content-draft": {
+      "category": "marketing",
+      "label": "Content Drafting",
+      "relatedPhaseId": "phase-launch"
+    }
   },
   "changelog": [
-    { "ts": 1739200000000, "by": "henry", "action": "Plan created" },
-    { "ts": 1739210000000, "by": "elon", "action": "Added sub-plan: Engineering Security Sprint" },
-    { "ts": 1739220000000, "by": "warren", "action": "Added sub-plan: Revenue Pipeline Security" },
-    { "ts": 1739230000000, "by": "elon", "action": "Added sub-plan: Engineering UI Component Migration" },
-    { "ts": 1739240000000, "by": "hormozi", "action": "Added sub-plan: Marketing Launch Content" },
-    { "ts": 1739350000000, "by": "marketing", "action": "Completed: Design System Tokens" },
-    { "ts": 1739380000000, "by": "scout", "action": "Completed: API Endpoint Audit" },
-    { "ts": 1739400000000, "by": "sales", "action": "Completed: RLS Policy Migration" }
+    {
+      "ts": 1739200000000,
+      "by": "henry",
+      "action": "Plan created"
+    },
+    {
+      "ts": 1739210000000,
+      "by": "elon",
+      "action": "Added sub-plan: Engineering Security Sprint"
+    },
+    {
+      "ts": 1739220000000,
+      "by": "warren",
+      "action": "Added sub-plan: Revenue Pipeline Security"
+    },
+    {
+      "ts": 1739230000000,
+      "by": "elon",
+      "action": "Added sub-plan: Engineering UI Component Migration"
+    },
+    {
+      "ts": 1739240000000,
+      "by": "hormozi",
+      "action": "Added sub-plan: Marketing Launch Content"
+    },
+    {
+      "ts": 1739350000000,
+      "by": "marketing",
+      "action": "Completed: Design System Tokens"
+    },
+    {
+      "ts": 1739380000000,
+      "by": "scout",
+      "action": "Completed: API Endpoint Audit"
+    },
+    {
+      "ts": 1739400000000,
+      "by": "sales",
+      "action": "Completed: RLS Policy Migration"
+    }
   ]
 }

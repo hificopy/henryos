@@ -1,6 +1,10 @@
 import type { SessionFileMeta, ParsedSessionEvent, SessionTotals, CostAnalytics, CronRunEntry, CronJobStats, AgentStatusEntry, MissionControlData, AgentIntelligence, BlockerAlert, PlanSummary, Plan, SubPlan, PlanTask, EnrichedSessionFileMeta, SessionArchiveInfo } from './types';
 
-const API_BASE = import.meta.env.VITE_API_URL || '/api';
+const API_BASE = import.meta.env.VITE_API_URL || (
+  typeof window !== 'undefined' && !['localhost', '127.0.0.1'].includes(window.location.hostname)
+    ? 'https://henryos.axolop.com/api'
+    : '/api'
+);
 
 async function fetchJSON<T>(url: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${url}`, {

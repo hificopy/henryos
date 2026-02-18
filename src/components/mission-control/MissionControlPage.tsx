@@ -14,6 +14,9 @@ export function MissionControlPage() {
   if (error) return <div className="p-8 text-center text-status-red text-sm">Failed to load mission data</div>;
   if (!data) return null;
 
+  // Get plan title from current phase or use default
+  const planTitle = data.currentPhase ? `${data.currentPhase} Progress` : 'Mission Progress';
+
   return (
     <div className="space-y-4 p-1">
       {/* Pulse Bar */}
@@ -21,7 +24,7 @@ export function MissionControlPage() {
 
       {/* Phase Swimlane */}
       {data.phases.length > 0 && (
-        <PhaseSwimlane phases={data.phases} planTitle="V5.0 Progress" />
+        <PhaseSwimlane phases={data.phases} planTitle={planTitle} />
       )}
 
       {/* Agent Intel Grid */}
